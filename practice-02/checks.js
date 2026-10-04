@@ -355,6 +355,63 @@ check("35. Работа с другим набором, без зависимо�
 //   assert.deepEqual(result, ...);
 // });
 
+check("36. Собственная: добавление после удаления освобождает прежний id", () => {
+  const tasks = fixture();
+  const before = copyTasks(tasks);
+
+  const afterRemove = expectTasks(removeTask(tasks, 7));
+  assert.deepEqual(afterRemove.map((task) => task.id), [1, 4, 10]);
+
+  const afterAdd = expectTasks(addTask(afterRemove, 7, "Переписать проверки", "low"));
+  assert.deepEqual(afterAdd.map((task) => task.id), [1, 4, 10, 7]);
+  assert.equal(afterAdd[3].title, "Переписать проверки");
+  assert.equal(afterAdd[3].completed, false);
+
+  assert.deepEqual(tasks, before);
+});
+
+check("37. Собственная: изменение первой и последней записи не трогает середину", () => {
+  const tasks = fixture();
+  const before = copyTasks(tasks);
+
+  const afterFirst = expectTasks(setTaskCompleted(tasks, 1, false));
+  const afterLast = expectTasks(renameTask(afterFirst, 10, "  Оформить отчёт  "));
+
+  assert.equal(afterLast[0].completed, false);
+  assert.equal(afterLast[3].title, "Оформить отчёт");
+  assert.equal(afterLast[3].completed, true);
+  assert.equal(afterLast[3].priority, "medium");
+
+  assert.equal(afterLast[1], tasks[1]);
+  assert.equal(afterLast[2], tasks[2]);
+  assert.notEqual(afterLast[0], tasks[0]);
+  assert.notEqual(afterLast[3], tasks[3]);
+
+  assert.deepEqual(tasks, before);
+});
+
+check("38. Собственная: три операции подряд и сводка после каждой", () => {
+  const tasks = fixture();
+  const before = copyTasks(tasks);
+
+  const step1 = expectTasks(renameTask(tasks, 4, "Уточнить модель задач"));
+  assert.deepEqual(getTaskStats(step1), { total: 4, completed: 2, pending: 2, progress: 50 });
+
+  const step2 = expectTasks(setTaskCompleted(step1, 4, true));
+  assert.deepEqual(getTaskStats(step2), { total: 4, completed: 3, pending: 1, progress: 75 });
+
+  const step3 = expectTasks(removeTask(step2, 10));
+  assert.deepEqual(step3.map((task) => task.id), [1, 4, 7]);
+  assert.deepEqual(getTaskStats(step3), {
+    total: 3, completed: 2, pending: 1, progress: 2 / 3 * 100,
+  });
+  assert.deepEqual(getTaskTitles(step3), [
+    "Изучить функции", "Уточнить модель задач", "Проверить методы массивов",
+  ]);
+
+  assert.deepEqual(tasks, before);
+});
+
 console.log(`\nПроверок пройдено: ${passed}; не пройдено: ${failed}.`);
 if (failed > 0) {
   process.exitCode = 1;
