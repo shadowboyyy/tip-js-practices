@@ -1,0 +1,32 @@
+{
+  "createdBeforeRestart": {
+    "id": 35,
+    "status": 201
+  },
+  "afterRestart": {
+    "status": 404,
+    "payload": {
+      "error": {
+        "code": "TASK_NOT_FOUND",
+        "message": "Задача с id 35 не найдена.",
+        "details": {
+          "id": 35
+        }
+      }
+    },
+    "ids": [
+      1,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34
+    ]
+  }
+}

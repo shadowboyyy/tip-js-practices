@@ -1,0 +1,25 @@
+{
+  "offline": {
+    "kind": "error",
+    "retryVisible": true,
+    "message": "Нет соединения с учебным API. Проверьте, запущен ли npm start.\n\nПовторить загрузку"
+  },
+  "retry": {
+    "kind": "ready",
+    "ids": [
+      1,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34
+    ],
+    "categoryOptions": 4
+  }
+}
