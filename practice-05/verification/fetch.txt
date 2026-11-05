@@ -1,0 +1,12 @@
+
+> tip-js-practice-05@1.0.0 example:fetch
+> node examples/fetch-basics.js
+
+status: 200
+ok: true
+content-type: application/json; charset=utf-8
+ids: [ 4, 13, 34 ]
+meta: {
+  total: 3,
+  filters: { completed: false, priority: 'high', categoryId: null, q: '' }
+}

@@ -1,0 +1,6 @@
+
+> tip-js-practice-05@1.0.0 client
+> node src/main.js
+
+Тип: network · Нет соединения с API.
+Проверяемый адрес API: http://127.0.0.1:5515/api

@@ -1,0 +1,11 @@
+
+> tip-js-practice-05@1.0.0 example:order:extra
+> node examples/event-loop-extra.js
+
+A: синхронный код
+B: начало async-функции
+C: конец синхронного кода
+D: обработчик Promise
+E: продолжение после await
+G: собственный обработчик Promise
+F: задача таймера

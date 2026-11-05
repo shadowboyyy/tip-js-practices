@@ -1,0 +1,54 @@
+[
+  {
+    "line": 98,
+    "source": "response = await fetchFn(url, options);",
+    "value": "{\"url\":\"http://127.0.0.1:5515/api/tasks/25\"}"
+  },
+  {
+    "line": 102,
+    "source": "if (!(response instanceof Response)) {",
+    "value": "{\"url\":\"http://127.0.0.1:5515/api/tasks/25\",\"status\":200,\"ok\":true,\"contentType\":\"application/json; charset=utf-8\"}"
+  },
+  {
+    "line": 129,
+    "source": "return await response.json();",
+    "value": "{\"url\":\"http://127.0.0.1:5515/api/tasks/25\",\"status\":200,\"ok\":true,\"contentType\":\"application/json; charset=utf-8\"}"
+  },
+  {
+    "payload": {
+      "data": {
+        "id": 25,
+        "title": "Исправить обработку ошибок",
+        "completed": true,
+        "priority": "high",
+        "categoryId": 2
+      }
+    }
+  },
+  {
+    "line": 98,
+    "source": "response = await fetchFn(url, options);",
+    "value": "{\"url\":\"http://127.0.0.1:5515/api/tasks/999\"}"
+  },
+  {
+    "line": 102,
+    "source": "if (!(response instanceof Response)) {",
+    "value": "{\"url\":\"http://127.0.0.1:5515/api/tasks/999\",\"status\":404,\"ok\":false,\"contentType\":\"application/json; charset=utf-8\"}"
+  },
+  {
+    "line": 115,
+    "source": "throw new ApiError(typeof error?.message === \"string\" ? error.message : `HTTP ${response.status}`, {",
+    "value": "{\"url\":\"http://127.0.0.1:5515/api/tasks/999\",\"status\":404,\"ok\":false,\"contentType\":\"application/json; charset=utf-8\"}"
+  },
+  {
+    "error": {
+      "kind": "http",
+      "status": 404,
+      "code": "TASK_NOT_FOUND",
+      "details": {
+        "id": 999
+      },
+      "url": "http://127.0.0.1:5515/api/tasks/999"
+    }
+  }
+]
