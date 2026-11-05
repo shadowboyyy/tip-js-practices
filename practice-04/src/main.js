@@ -126,6 +126,7 @@ function setFormMode(id = null) {
     clearFormErrors();
     elements.idInput.disabled = false;
     elements.formHeading.textContent = "Добавление задачи";
+    elements.formMode.textContent = "Режим создания новой задачи.";
     elements.submitButton.textContent = "Добавить задачу";
     elements.cancelButton.hidden = true;
     elements.idInput.focus();
@@ -143,7 +144,8 @@ function setFormMode(id = null) {
     elements.priorityInput.value = task.priority;
     elements.idInput.disabled = true; // Блокируем id
     elements.formHeading.textContent = "Редактирование задачи";
-    elements.submitButton.textContent = "Сохранить";
+    elements.formMode.textContent = `Изменяется задача № ${id}.`;
+    elements.submitButton.textContent = "Сохранить изменения";
     elements.cancelButton.hidden = false;
     elements.titleInput.focus();
   }

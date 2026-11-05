@@ -11,6 +11,8 @@ export function isValidTaskList(value) {
   const ids = new Set();
 
   for (const task of value) {
+    if (!task || typeof task !== "object" || Array.isArray(task)) return false;
+
     // Проверка id
     if (!Number.isSafeInteger(task.id) || task.id <= 0) return false;
     if (ids.has(task.id)) return false; // Дубликаты запрещены

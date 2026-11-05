@@ -1,0 +1,20 @@
+[
+  {
+    "case": "Пустое поле",
+    "valid": false,
+    "submits": 0
+  },
+  {
+    "case": "Пробелы",
+    "log": "submit получен, но прикладная проверка отклонила значение.",
+    "error": "Название не должно состоять только из пробелов."
+  },
+  {
+    "case": "FormData и строковое хранение",
+    "log": "submit.defaultPrevented: true\ntypeof FormData title: string\ntypeof localStorage value: string\n{\n  \"value\": {\n    \"title\": \"Изучить JSON\",\n    \"priority\": \"low\"\n  },\n  \"serialized\": \"{\\\"title\\\":\\\"Изучить JSON\\\",\\\"priority\\\":\\\"low\\\"}\"\n}"
+  },
+  {
+    "case": "Повреждённый JSON",
+    "log": "JSON.parse завершился ошибкой:\nExpected property name or '}' in JSON at position 1 (line 1 column 2)\n{\n  \"raw\": \"{broken-json\"\n}"
+  }
+]

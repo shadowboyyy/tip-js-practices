@@ -1,0 +1,448 @@
+{
+  "general": [
+    {
+      "step": "0. Сброс",
+      "ids": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "stats": {
+        "total": "4",
+        "completed": "2",
+        "pending": "2",
+        "progress": "50.0%",
+        "visible": "4"
+      },
+      "storage": null
+    },
+    {
+      "step": "1. Добавление 20",
+      "ids": [
+        1,
+        4,
+        7,
+        10,
+        20
+      ],
+      "stats": {
+        "total": "5",
+        "completed": "2",
+        "pending": "3",
+        "progress": "40.0%",
+        "visible": "5"
+      },
+      "storage": "{\"version\":1,\"tasks\":[{\"id\":1,\"title\":\"Изучить функции\",\"completed\":true,\"priority\":\"medium\"},{\"id\":4,\"title\":\"Подготовить модель задач\",\"completed\":false,\"priority\":\"high\"},{\"id\":7,\"title\":\"Проверить методы массивов\",\"completed\":false,\"priority\":\"low\"},{\"id\":10,\"title\":\"Оформить README\",\"completed\":true,\"priority\":\"medium\"},{\"id\":20,\"title\":\"Изучить localStorage\",\"completed\":false,\"priority\":\"high\"}]}"
+    },
+    {
+      "step": "2. Повтор 4",
+      "ids": [
+        1,
+        4,
+        7,
+        10,
+        20
+      ],
+      "stats": {
+        "total": "5",
+        "completed": "2",
+        "pending": "3",
+        "progress": "40.0%",
+        "visible": "5"
+      },
+      "storage": "{\"version\":1,\"tasks\":[{\"id\":1,\"title\":\"Изучить функции\",\"completed\":true,\"priority\":\"medium\"},{\"id\":4,\"title\":\"Подготовить модель задач\",\"completed\":false,\"priority\":\"high\"},{\"id\":7,\"title\":\"Проверить методы массивов\",\"completed\":false,\"priority\":\"low\"},{\"id\":10,\"title\":\"Оформить README\",\"completed\":true,\"priority\":\"medium\"},{\"id\":20,\"title\":\"Изучить localStorage\",\"completed\":false,\"priority\":\"high\"}]}"
+    },
+    {
+      "step": "3. Редактирование 4",
+      "ids": [
+        1,
+        4,
+        7,
+        10,
+        20
+      ],
+      "stats": {
+        "total": "5",
+        "completed": "2",
+        "pending": "3",
+        "progress": "40.0%",
+        "visible": "5"
+      },
+      "storage": "{\"version\":1,\"tasks\":[{\"id\":1,\"title\":\"Изучить функции\",\"completed\":true,\"priority\":\"medium\"},{\"id\":4,\"title\":\"Подготовить форму задач\",\"completed\":false,\"priority\":\"low\"},{\"id\":7,\"title\":\"Проверить методы массивов\",\"completed\":false,\"priority\":\"low\"},{\"id\":10,\"title\":\"Оформить README\",\"completed\":true,\"priority\":\"medium\"},{\"id\":20,\"title\":\"Изучить localStorage\",\"completed\":false,\"priority\":\"high\"}]}"
+    },
+    {
+      "step": "4. Завершение 7",
+      "ids": [
+        1,
+        4,
+        7,
+        10,
+        20
+      ],
+      "stats": {
+        "total": "5",
+        "completed": "3",
+        "pending": "2",
+        "progress": "60.0%",
+        "visible": "5"
+      },
+      "storage": "{\"version\":1,\"tasks\":[{\"id\":1,\"title\":\"Изучить функции\",\"completed\":true,\"priority\":\"medium\"},{\"id\":4,\"title\":\"Подготовить форму задач\",\"completed\":false,\"priority\":\"low\"},{\"id\":7,\"title\":\"Проверить методы массивов\",\"completed\":true,\"priority\":\"low\"},{\"id\":10,\"title\":\"Оформить README\",\"completed\":true,\"priority\":\"medium\"},{\"id\":20,\"title\":\"Изучить localStorage\",\"completed\":false,\"priority\":\"high\"}]}"
+    },
+    {
+      "step": "5. Удаление 1",
+      "ids": [
+        4,
+        7,
+        10,
+        20
+      ],
+      "stats": {
+        "total": "4",
+        "completed": "2",
+        "pending": "2",
+        "progress": "50.0%",
+        "visible": "4"
+      },
+      "storage": "{\"version\":1,\"tasks\":[{\"id\":4,\"title\":\"Подготовить форму задач\",\"completed\":false,\"priority\":\"low\"},{\"id\":7,\"title\":\"Проверить методы массивов\",\"completed\":true,\"priority\":\"low\"},{\"id\":10,\"title\":\"Оформить README\",\"completed\":true,\"priority\":\"medium\"},{\"id\":20,\"title\":\"Изучить localStorage\",\"completed\":false,\"priority\":\"high\"}]}"
+    },
+    {
+      "step": "6. Перезагрузка",
+      "ids": [
+        4,
+        7,
+        10,
+        20
+      ],
+      "stats": {
+        "total": "4",
+        "completed": "2",
+        "pending": "2",
+        "progress": "50.0%",
+        "visible": "4"
+      },
+      "storage": "{\"version\":1,\"tasks\":[{\"id\":4,\"title\":\"Подготовить форму задач\",\"completed\":false,\"priority\":\"low\"},{\"id\":7,\"title\":\"Проверить методы массивов\",\"completed\":true,\"priority\":\"low\"},{\"id\":10,\"title\":\"Оформить README\",\"completed\":true,\"priority\":\"medium\"},{\"id\":20,\"title\":\"Изучить localStorage\",\"completed\":false,\"priority\":\"high\"}]}"
+    },
+    {
+      "step": "7. Сброс",
+      "ids": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "stats": {
+        "total": "4",
+        "completed": "2",
+        "pending": "2",
+        "progress": "50.0%",
+        "visible": "4"
+      },
+      "storage": null
+    }
+  ],
+  "variant": [
+    {
+      "step": "Исходный набор",
+      "ids": [
+        11,
+        23,
+        37,
+        41,
+        58,
+        64
+      ],
+      "stats": {
+        "total": "6",
+        "completed": "3",
+        "pending": "3",
+        "progress": "50.0%",
+        "visible": "6"
+      },
+      "storage": null
+    },
+    {
+      "step": "Добавление 75",
+      "ids": [
+        11,
+        23,
+        37,
+        41,
+        58,
+        64,
+        75
+      ],
+      "stats": {
+        "total": "7",
+        "completed": "3",
+        "pending": "4",
+        "progress": "42.9%",
+        "visible": "7"
+      },
+      "storage": "{\"version\":1,\"tasks\":[{\"id\":11,\"title\":\"Составить план семинара\",\"completed\":true,\"priority\":\"high\"},{\"id\":23,\"title\":\"Подготовить раздаточные материалы\",\"completed\":true,\"priority\":\"medium\"},{\"id\":37,\"title\":\"Забронировать аудиторию\",\"completed\":true,\"priority\":\"low\"},{\"id\":41,\"title\":\"Пригласить участников\",\"completed\":false,\"priority\":\"high\"},{\"id\":58,\"title\":\"Проверить оборудование\",\"completed\":false,\"priority\":\"medium\"},{\"id\":64,\"title\":\"Собрать обратную связь\",\"completed\":false,\"priority\":\"low\"},{\"id\":75,\"title\":\"Подготовить материалы семинара\",\"completed\":false,\"priority\":\"medium\"}]}"
+    },
+    {
+      "step": "Редактирование 23",
+      "ids": [
+        11,
+        23,
+        37,
+        41,
+        58,
+        64,
+        75
+      ],
+      "stats": {
+        "total": "7",
+        "completed": "3",
+        "pending": "4",
+        "progress": "42.9%",
+        "visible": "7"
+      },
+      "storage": "{\"version\":1,\"tasks\":[{\"id\":11,\"title\":\"Составить план семинара\",\"completed\":true,\"priority\":\"high\"},{\"id\":23,\"title\":\"Обновить раздаточные материалы семинара\",\"completed\":true,\"priority\":\"high\"},{\"id\":37,\"title\":\"Забронировать аудиторию\",\"completed\":true,\"priority\":\"low\"},{\"id\":41,\"title\":\"Пригласить участников\",\"completed\":false,\"priority\":\"high\"},{\"id\":58,\"title\":\"Проверить оборудование\",\"completed\":false,\"priority\":\"medium\"},{\"id\":64,\"title\":\"Собрать обратную связь\",\"completed\":false,\"priority\":\"low\"},{\"id\":75,\"title\":\"Подготовить материалы семинара\",\"completed\":false,\"priority\":\"medium\"}]}"
+    },
+    {
+      "step": "Удаление 37",
+      "ids": [
+        11,
+        23,
+        41,
+        58,
+        64,
+        75
+      ],
+      "stats": {
+        "total": "6",
+        "completed": "2",
+        "pending": "4",
+        "progress": "33.3%",
+        "visible": "6"
+      },
+      "storage": "{\"version\":1,\"tasks\":[{\"id\":11,\"title\":\"Составить план семинара\",\"completed\":true,\"priority\":\"high\"},{\"id\":23,\"title\":\"Обновить раздаточные материалы семинара\",\"completed\":true,\"priority\":\"high\"},{\"id\":41,\"title\":\"Пригласить участников\",\"completed\":false,\"priority\":\"high\"},{\"id\":58,\"title\":\"Проверить оборудование\",\"completed\":false,\"priority\":\"medium\"},{\"id\":64,\"title\":\"Собрать обратную связь\",\"completed\":false,\"priority\":\"low\"},{\"id\":75,\"title\":\"Подготовить материалы семинара\",\"completed\":false,\"priority\":\"medium\"}]}"
+    },
+    {
+      "step": "Перезагрузка",
+      "ids": [
+        11,
+        23,
+        41,
+        58,
+        64,
+        75
+      ],
+      "stats": {
+        "total": "6",
+        "completed": "2",
+        "pending": "4",
+        "progress": "33.3%",
+        "visible": "6"
+      },
+      "storage": "{\"version\":1,\"tasks\":[{\"id\":11,\"title\":\"Составить план семинара\",\"completed\":true,\"priority\":\"high\"},{\"id\":23,\"title\":\"Обновить раздаточные материалы семинара\",\"completed\":true,\"priority\":\"high\"},{\"id\":41,\"title\":\"Пригласить участников\",\"completed\":false,\"priority\":\"high\"},{\"id\":58,\"title\":\"Проверить оборудование\",\"completed\":false,\"priority\":\"medium\"},{\"id\":64,\"title\":\"Собрать обратную связь\",\"completed\":false,\"priority\":\"low\"},{\"id\":75,\"title\":\"Подготовить материалы семинара\",\"completed\":false,\"priority\":\"medium\"}]}"
+    },
+    {
+      "step": "Сброс",
+      "ids": [
+        11,
+        23,
+        37,
+        41,
+        58,
+        64
+      ],
+      "stats": {
+        "total": "6",
+        "completed": "3",
+        "pending": "3",
+        "progress": "50.0%",
+        "visible": "6"
+      },
+      "storage": null
+    }
+  ],
+  "form": [
+    {
+      "case": "Повтор 4",
+      "error": "Задача с таким ID уже существует"
+    },
+    {
+      "case": "Название длиной 0",
+      "expected": false,
+      "exists": 0,
+      "nativeValid": false,
+      "error": ""
+    },
+    {
+      "case": "Название длиной 3",
+      "expected": false,
+      "exists": 0,
+      "nativeValid": false,
+      "error": "Название не может быть пустым"
+    },
+    {
+      "case": "Название длиной 100",
+      "expected": true,
+      "exists": 1,
+      "nativeValid": false,
+      "error": ""
+    },
+    {
+      "case": "Название длиной 101",
+      "expected": false,
+      "exists": 0,
+      "nativeValid": false,
+      "error": "Название не должно превышать 100 символов"
+    }
+  ],
+  "storage": [
+    {
+      "value": "{broken-json",
+      "ids": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "warning": "Ошибка при чтении данных"
+    },
+    {
+      "value": "{\"version\":9,\"tasks\":[]}",
+      "ids": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "warning": "Неизвестная версия схемы данных"
+    },
+    {
+      "value": "{\"version\":1,\"tasks\":[null]}",
+      "ids": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "warning": "Некорректная структура задач"
+    },
+    {
+      "case": "Общий набор после изменения варианта",
+      "ids": [
+        1,
+        4,
+        7,
+        10
+      ]
+    }
+  ],
+  "keyboard": [
+    {
+      "case": "Начало редактирования",
+      "focus": "task-title"
+    },
+    {
+      "case": "Отмена редактирования Space",
+      "focus": "task-id",
+      "disabled": false
+    },
+    {
+      "case": "Tab после id",
+      "focus": "task-title"
+    }
+  ],
+  "debug": [
+    {
+      "draft": {
+        "id": "20",
+        "title": "Изучить localStorage",
+        "priority": "high"
+      },
+      "validation": {
+        "ok": true,
+        "value": {
+          "id": 20,
+          "title": "Изучить localStorage",
+          "priority": "high"
+        }
+      }
+    },
+    {
+      "draft": {
+        "id": "20",
+        "title": "Изучить localStorage",
+        "priority": "high"
+      },
+      "validation": {
+        "ok": true,
+        "value": {
+          "id": 20,
+          "title": "Изучить localStorage",
+          "priority": "high"
+        }
+      },
+      "result": {
+        "ok": true,
+        "tasks": [
+          {
+            "id": 1,
+            "title": "Изучить функции",
+            "completed": true,
+            "priority": "medium"
+          },
+          {
+            "id": 4,
+            "title": "Подготовить модель задач",
+            "completed": false,
+            "priority": "high"
+          },
+          {
+            "id": 7,
+            "title": "Проверить методы массивов",
+            "completed": false,
+            "priority": "low"
+          },
+          {
+            "id": 10,
+            "title": "Оформить README",
+            "completed": true,
+            "priority": "medium"
+          },
+          {
+            "id": 20,
+            "title": "Изучить localStorage",
+            "completed": false,
+            "priority": "high"
+          }
+        ]
+      },
+      "json": "{\"version\":1,\"tasks\":[{\"id\":1,\"title\":\"Изучить функции\",\"completed\":true,\"priority\":\"medium\"},{\"id\":4,\"title\":\"Подготовить модель задач\",\"completed\":false,\"priority\":\"high\"},{\"id\":7,\"title\":\"Проверить методы массивов\",\"completed\":false,\"priority\":\"low\"},{\"id\":10,\"title\":\"Оформить README\",\"completed\":true,\"priority\":\"medium\"},{\"id\":20,\"title\":\"Изучить localStorage\",\"completed\":false,\"priority\":\"high\"}]}"
+    },
+    {
+      "draft": {
+        "id": "4",
+        "title": "Повтор id",
+        "priority": "medium"
+      },
+      "validation": {
+        "ok": false,
+        "errors": {
+          "id": "Задача с таким ID уже существует"
+        }
+      }
+    },
+    {
+      "draft": {
+        "id": null,
+        "title": "Подготовить форму задач",
+        "priority": "low"
+      },
+      "validation": {
+        "ok": true,
+        "value": {
+          "id": 4,
+          "title": "Подготовить форму задач",
+          "priority": "low"
+        }
+      }
+    }
+  ]
+}

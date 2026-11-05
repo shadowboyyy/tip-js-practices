@@ -7,8 +7,7 @@ export const demoTasks = [
   { id: 10, title: "Оформить README", completed: true, priority: "medium" },
 ];
 
-// TODO: указать свой вариант и подготовить шесть задач по разделу 7 методички.
-// Пустой массив — заготовка, а не выполненный индивидуальный вариант.
+// Вариант 4: подготовка семинара, тот же набор из ПР2–ПР3.
 export const variantNumber = 4;
 export const variantTasks = [
   { id: 11, title: "Составить план семинара", completed: true, priority: "high" },

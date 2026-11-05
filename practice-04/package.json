@@ -7,6 +7,7 @@
     "start": "node tools/serve.mjs",
     "check:service": "node checks/service.checks.js",
     "check:modules": "node checks/modules.checks.js",
-    "test": "npm run check:service && npm run check:modules"
+    "test": "npm run check:service && npm run check:modules && npm run check:own",
+    "check:own": "node checks/own.checks.js"
   }
 }
