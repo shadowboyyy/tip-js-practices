@@ -1,0 +1,1297 @@
+{
+  "date": "2026-11-15T20:56:38.171Z",
+  "node": "v24.22.1",
+  "p7": [
+    {
+      "number": "Counter",
+      "actual": "Два счётчика с шагами 1 и 3 имеют независимое состояние.",
+      "passed": true
+    },
+    {
+      "number": "Вариант 4",
+      "actual": "Средний приоритет: 4 → 5 карточек, общий набор 12 → 13, новая запись id 35.",
+      "passed": true
+    },
+    {
+      "number": 1,
+      "actual": "12 карточек, статистика 12 / 5 / 7.",
+      "passed": true
+    },
+    {
+      "number": 2,
+      "actual": "Пробелы отклонены, черновик сохранён, массив не изменён.",
+      "passed": true
+    },
+    {
+      "number": 3,
+      "actual": "100 символов приняты, 101 отклонён.",
+      "passed": true
+    },
+    {
+      "number": 4,
+      "actual": "Название нормализовано, форма очищена.",
+      "passed": true
+    },
+    {
+      "number": 5,
+      "actual": "Редактирование сохраняет completed=true.",
+      "passed": true
+    },
+    {
+      "number": 6,
+      "actual": "Ключ формы сбросил черновик A при выборе B.",
+      "passed": true
+    },
+    {
+      "number": 7,
+      "actual": "Отмена сохранила исходную запись.",
+      "passed": true
+    },
+    {
+      "number": 8,
+      "actual": "Два переключения вернули исходный статус.",
+      "passed": true
+    },
+    {
+      "number": 9,
+      "actual": "Отказ сохраняет запись, подтверждение удаляет.",
+      "passed": true
+    },
+    {
+      "number": 10,
+      "actual": "Удаление редактируемой записи вернуло форму создания.",
+      "passed": true
+    },
+    {
+      "number": 11,
+      "actual": "Четыре условия одновременно выбрали одну задачу.",
+      "passed": true
+    },
+    {
+      "number": 12,
+      "actual": "Пустая выборка и сброс фильтров работают.",
+      "passed": true
+    },
+    {
+      "number": 13,
+      "actual": "Неподходящая запись скрыта, общая статистика увеличилась.",
+      "passed": true
+    },
+    {
+      "number": 14,
+      "actual": "HTML отображён текстом, img не создан.",
+      "passed": true
+    },
+    {
+      "number": 15,
+      "actual": "Удалён весь набор, создание из пустого массива работает.",
+      "passed": true
+    },
+    {
+      "number": 16,
+      "actual": "Перезагрузка восстановила 12 задач и фильтр среднего приоритета.",
+      "passed": true
+    },
+    {
+      "number": 17,
+      "actual": "Форма отправлена клавиатурой, фокус виден.",
+      "passed": true
+    },
+    {
+      "number": 18,
+      "actual": "В собранном приложении вариант 4: 4 → 5 карточек.",
+      "passed": true
+    }
+  ],
+  "p8": [
+    {
+      "number": 2,
+      "actual": "При остановленном API показана ошибка и кнопка повтора.",
+      "passed": true
+    },
+    {
+      "number": 3,
+      "actual": "После запуска API повтор восстановил задачи и категории.",
+      "passed": true
+    },
+    {
+      "number": 1,
+      "actual": "Получены 12 задач и 3 категории с реального API.",
+      "passed": true
+    },
+    {
+      "number": 4,
+      "actual": "Пустой ответ 200 показан как успешная пустая выборка.",
+      "passed": true
+    },
+    {
+      "number": 5,
+      "actual": "При задержке сети итог соответствует последнему поиску модель.",
+      "passed": true
+    },
+    {
+      "number": 6,
+      "actual": "Валидация пробелов остановила отправку POST.",
+      "passed": true
+    },
+    {
+      "number": "Вариант 4",
+      "actual": "POST 201 с medium, затем GET ?priority=medium 200; 4 → 5 карточек.",
+      "passed": true
+    },
+    {
+      "number": 7,
+      "actual": "После перезагрузки созданная запись осталась на сервере.",
+      "passed": true
+    },
+    {
+      "number": 8,
+      "actual": "Две отправки подряд вызвали один POST и одну запись.",
+      "passed": true
+    },
+    {
+      "number": 9,
+      "actual": "PATCH формы не содержит completed; выполненный статус сохранён.",
+      "passed": true
+    },
+    {
+      "number": 10,
+      "actual": "PATCH и GET completed=false скрыли завершённую задачу.",
+      "passed": true
+    },
+    {
+      "number": 11,
+      "actual": "Отказ без DELETE; подтверждение DELETE 204 и новый GET.",
+      "passed": true
+    },
+    {
+      "number": 12,
+      "actual": "При остановленном API черновик сохранён, ошибка показана, блокировка снята.",
+      "passed": true
+    },
+    {
+      "number": 13,
+      "actual": "Ошибка GET сохранила последний снимок и заблокировала изменение.",
+      "passed": true
+    },
+    {
+      "number": 16,
+      "actual": "Перезапуск API вернул исходные 12 задач.",
+      "passed": true
+    },
+    {
+      "number": 14,
+      "actual": "Черновик сохранён после скрытия фильтром; PATCH адресован id 1.",
+      "passed": true
+    },
+    {
+      "number": 15,
+      "actual": "Серверное название с HTML отображается буквальным текстом.",
+      "passed": true
+    },
+    {
+      "number": "Дополнительно",
+      "actual": "Блокировка GET categories после POST: сохранение подтверждено, ошибка чтения отдельно, создана ровно одна запись.",
+      "passed": true
+    },
+    {
+      "number": 17,
+      "actual": "Preview: загрузка, создание medium и удаление 204 работают.",
+      "passed": true
+    }
+  ],
+  "p9": [
+    {
+      "url": "http://127.0.0.1:5809/api/health",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "24",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "data": {
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/categories",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "130",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1,
+            "name": "Учёба"
+          },
+          {
+            "id": 2,
+            "name": "Проект"
+          },
+          {
+            "id": 3,
+            "name": "Организация"
+          }
+        ],
+        "meta": {
+          "total": 3
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "1429",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1,
+            "title": "Изучить функции",
+            "completed": true,
+            "priority": "medium",
+            "categoryId": 1
+          },
+          {
+            "id": 4,
+            "title": "Подготовить модель задач",
+            "completed": false,
+            "priority": "high",
+            "categoryId": 2
+          },
+          {
+            "id": 7,
+            "title": "Проверить методы массивов",
+            "completed": false,
+            "priority": "low",
+            "categoryId": 1
+          },
+          {
+            "id": 10,
+            "title": "Оформить README",
+            "completed": true,
+            "priority": "medium",
+            "categoryId": 3
+          },
+          {
+            "id": 13,
+            "title": "Разобрать Promise",
+            "completed": false,
+            "priority": "high",
+            "categoryId": 1
+          },
+          {
+            "id": 16,
+            "title": "Проверить учебный API",
+            "completed": true,
+            "priority": "high",
+            "categoryId": 2
+          },
+          {
+            "id": 19,
+            "title": "Описать контракт запросов",
+            "completed": false,
+            "priority": "medium",
+            "categoryId": 3
+          },
+          {
+            "id": 22,
+            "title": "Подготовить демонстрацию",
+            "completed": false,
+            "priority": "low",
+            "categoryId": 2
+          },
+          {
+            "id": 25,
+            "title": "Исправить обработку ошибок",
+            "completed": true,
+            "priority": "high",
+            "categoryId": 2
+          },
+          {
+            "id": 28,
+            "title": "Добавить фильтры API",
+            "completed": false,
+            "priority": "medium",
+            "categoryId": 2
+          },
+          {
+            "id": 31,
+            "title": "Сверить отчёт",
+            "completed": true,
+            "priority": "low",
+            "categoryId": 3
+          },
+          {
+            "id": 34,
+            "title": "Провести рефакторинг клиента",
+            "completed": false,
+            "priority": "high",
+            "categoryId": 2
+          }
+        ],
+        "meta": {
+          "total": 12,
+          "filters": {
+            "completed": null,
+            "priority": null,
+            "categoryId": null,
+            "q": ""
+          }
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks?priority=medium",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "531",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1,
+            "title": "Изучить функции",
+            "completed": true,
+            "priority": "medium",
+            "categoryId": 1
+          },
+          {
+            "id": 10,
+            "title": "Оформить README",
+            "completed": true,
+            "priority": "medium",
+            "categoryId": 3
+          },
+          {
+            "id": 19,
+            "title": "Описать контракт запросов",
+            "completed": false,
+            "priority": "medium",
+            "categoryId": 3
+          },
+          {
+            "id": 28,
+            "title": "Добавить фильтры API",
+            "completed": false,
+            "priority": "medium",
+            "categoryId": 2
+          }
+        ],
+        "meta": {
+          "total": 4,
+          "filters": {
+            "completed": null,
+            "priority": "medium",
+            "categoryId": null,
+            "q": ""
+          }
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks?q=xyzzzz",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "106",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "data": [],
+        "meta": {
+          "total": 0,
+          "filters": {
+            "completed": null,
+            "priority": null,
+            "categoryId": null,
+            "q": "xyzzzz"
+          }
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks/4",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "125",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "data": {
+          "id": 4,
+          "title": "Подготовить модель задач",
+          "completed": false,
+          "priority": "high",
+          "categoryId": 2
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks/2",
+      "method": "GET",
+      "status": 404,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "100",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "error": {
+          "code": "TASK_NOT_FOUND",
+          "message": "Задача не найдена.",
+          "details": {
+            "id": 2
+          }
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks/4abc",
+      "method": "GET",
+      "status": 400,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "109",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Некорректный идентификатор задачи."
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks?sort=id",
+      "method": "GET",
+      "status": 400,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "93",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "error": {
+          "code": "INVALID_QUERY",
+          "message": "Неизвестный параметр: sort."
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks?priority=medium&priority=medium",
+      "method": "GET",
+      "status": 400,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "114",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "error": {
+          "code": "INVALID_QUERY",
+          "message": "Параметр priority не должен повторяться."
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks/1",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "109",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "data": {
+          "id": 1,
+          "title": "Изучить функции",
+          "completed": true,
+          "priority": "medium",
+          "categoryId": 1
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks",
+      "method": "POST",
+      "status": 405,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "allow": "GET, HEAD, OPTIONS",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "105",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "error": {
+          "code": "METHOD_NOT_ALLOWED",
+          "message": "Разрешены методы GET, HEAD и OPTIONS."
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "1429",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1,
+            "title": "Изучить функции",
+            "completed": true,
+            "priority": "medium",
+            "categoryId": 1
+          },
+          {
+            "id": 4,
+            "title": "Подготовить модель задач",
+            "completed": false,
+            "priority": "high",
+            "categoryId": 2
+          },
+          {
+            "id": 7,
+            "title": "Проверить методы массивов",
+            "completed": false,
+            "priority": "low",
+            "categoryId": 1
+          },
+          {
+            "id": 10,
+            "title": "Оформить README",
+            "completed": true,
+            "priority": "medium",
+            "categoryId": 3
+          },
+          {
+            "id": 13,
+            "title": "Разобрать Promise",
+            "completed": false,
+            "priority": "high",
+            "categoryId": 1
+          },
+          {
+            "id": 16,
+            "title": "Проверить учебный API",
+            "completed": true,
+            "priority": "high",
+            "categoryId": 2
+          },
+          {
+            "id": 19,
+            "title": "Описать контракт запросов",
+            "completed": false,
+            "priority": "medium",
+            "categoryId": 3
+          },
+          {
+            "id": 22,
+            "title": "Подготовить демонстрацию",
+            "completed": false,
+            "priority": "low",
+            "categoryId": 2
+          },
+          {
+            "id": 25,
+            "title": "Исправить обработку ошибок",
+            "completed": true,
+            "priority": "high",
+            "categoryId": 2
+          },
+          {
+            "id": 28,
+            "title": "Добавить фильтры API",
+            "completed": false,
+            "priority": "medium",
+            "categoryId": 2
+          },
+          {
+            "id": 31,
+            "title": "Сверить отчёт",
+            "completed": true,
+            "priority": "low",
+            "categoryId": 3
+          },
+          {
+            "id": 34,
+            "title": "Провести рефакторинг клиента",
+            "completed": false,
+            "priority": "high",
+            "categoryId": 2
+          }
+        ],
+        "meta": {
+          "total": 12,
+          "filters": {
+            "completed": null,
+            "priority": null,
+            "categoryId": null,
+            "q": ""
+          }
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/unknown",
+      "method": "GET",
+      "status": 404,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "82",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "error": {
+          "code": "ROUTE_NOT_FOUND",
+          "message": "Маршрут не найден."
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "close",
+        "content-length": "1429",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "x-content-type-options": "nosniff"
+      },
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks",
+      "method": "OPTIONS",
+      "status": 204,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "date": "Sun, 15 Nov 2026 20:56:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:5809/api/tasks",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "access-control-allow-headers": "Accept, Content-Type",
+        "access-control-allow-methods": "GET, HEAD, OPTIONS",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-store",
+        "connection": "keep-alive",
+        "content-length": "1429",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sun, 15 Nov 2026 20:56:45 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1,
+            "title": "Изучить функции",
+            "completed": true,
+            "priority": "medium",
+            "categoryId": 1
+          },
+          {
+            "id": 4,
+            "title": "Подготовить модель задач",
+            "completed": false,
+            "priority": "high",
+            "categoryId": 2
+          },
+          {
+            "id": 7,
+            "title": "Проверить методы массивов",
+            "completed": false,
+            "priority": "low",
+            "categoryId": 1
+          },
+          {
+            "id": 10,
+            "title": "Оформить README",
+            "completed": true,
+            "priority": "medium",
+            "categoryId": 3
+          },
+          {
+            "id": 13,
+            "title": "Разобрать Promise",
+            "completed": false,
+            "priority": "high",
+            "categoryId": 1
+          },
+          {
+            "id": 16,
+            "title": "Проверить учебный API",
+            "completed": true,
+            "priority": "high",
+            "categoryId": 2
+          },
+          {
+            "id": 19,
+            "title": "Описать контракт запросов",
+            "completed": false,
+            "priority": "medium",
+            "categoryId": 3
+          },
+          {
+            "id": 22,
+            "title": "Подготовить демонстрацию",
+            "completed": false,
+            "priority": "low",
+            "categoryId": 2
+          },
+          {
+            "id": 25,
+            "title": "Исправить обработку ошибок",
+            "completed": true,
+            "priority": "high",
+            "categoryId": 2
+          },
+          {
+            "id": 28,
+            "title": "Добавить фильтры API",
+            "completed": false,
+            "priority": "medium",
+            "categoryId": 2
+          },
+          {
+            "id": 31,
+            "title": "Сверить отчёт",
+            "completed": true,
+            "priority": "low",
+            "categoryId": 3
+          },
+          {
+            "id": 34,
+            "title": "Провести рефакторинг клиента",
+            "completed": false,
+            "priority": "high",
+            "categoryId": 2
+          }
+        ],
+        "meta": {
+          "total": 12,
+          "filters": {
+            "completed": null,
+            "priority": null,
+            "categoryId": null,
+            "q": ""
+          }
+        }
+      }
+    }
+  ],
+  "network": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?priority=medium",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?q=%D0%BD%D0%B5%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9+%D0%BF%D0%BE%D0%B8%D1%81%D0%BA+xyz",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?q=%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?priority=medium",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 201,
+      "body": "{\"title\":\"Подготовить защиту API\",\"priority\":\"medium\",\"categoryId\":1}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?priority=medium",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?priority=medium",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 201,
+      "body": "{\"title\":\"Без дубликата\",\"priority\":\"medium\",\"categoryId\":1}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?priority=medium",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "PATCH",
+      "url": "http://127.0.0.1:5805/api/tasks/1",
+      "status": 200,
+      "body": "{\"title\":\"Сохранить выполненный статус\",\"priority\":\"medium\",\"categoryId\":1}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?completed=false",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "PATCH",
+      "url": "http://127.0.0.1:5805/api/tasks/4",
+      "status": 200,
+      "body": "{\"completed\":true}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?completed=false",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "DELETE",
+      "url": "http://127.0.0.1:5805/api/tasks/36",
+      "status": 204,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?completed=false",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?completed=false",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?q=%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "PATCH",
+      "url": "http://127.0.0.1:5805/api/tasks/1",
+      "status": 200,
+      "body": "{\"title\":\"Черновик скрытой задачи\",\"priority\":\"medium\",\"categoryId\":1}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?q=%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 201,
+      "body": "{\"title\":\"<img src=x onerror=alert(1)>\",\"priority\":\"medium\",\"categoryId\":1}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 201,
+      "body": "{\"title\":\"POST успешен GET ошибочен\",\"priority\":\"medium\",\"categoryId\":1}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?priority=medium",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:5805/api/tasks",
+      "status": 201,
+      "body": "{\"title\":\"Preview API\",\"priority\":\"medium\",\"categoryId\":1}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?priority=medium",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "DELETE",
+      "url": "http://127.0.0.1:5805/api/tasks/37",
+      "status": 204,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/tasks?priority=medium",
+      "status": 200,
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:5805/api/categories",
+      "status": 200,
+      "body": null
+    }
+  ],
+  "chrome": "157.0.8103.51",
+  "p7Console": [],
+  "p8Console": [],
+  "cors": true,
+  "books": "200 для id 3, 404 для id 9",
+  "sourceCommits": {
+    "practice-07": "3231d84",
+    "practice-08": "cfa7bed",
+    "practice-09": "817f1e4"
+  },
+  "automaticTests": {
+    "practice-07": 28,
+    "practice-08": 52,
+    "practice-09": 90,
+    "failed": 0
+  }
+}

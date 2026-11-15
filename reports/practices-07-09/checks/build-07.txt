@@ -1,0 +1,13 @@
+
+> tip-practice-07@1.0.0 build
+> vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 37 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.42 kB │ gzip:  0.30 kB
+dist/assets/index-D-qtpoMY.css    0.62 kB │ gzip:  0.39 kB
+dist/assets/index-UjX6XI-s.js   232.28 kB │ gzip: 72.59 kB
+✓ built in 440ms
